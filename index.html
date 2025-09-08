@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIERLY</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fff; /* background putih */
+            color: #000; /* teks hitam */
+            text-align: center;
+            cursor: pointer; /* biar kelihatan bisa di-klik */
+        }
+        .logo {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo img {
+            max-width: 90%; /* agar tetap responsif */
+            max-height: 80vh; /* memenuhi layar laptop */
+            opacity: 0;
+            transform: scale(0.8);
+            animation: fadeInScale 1.2s ease forwards;
+        }
+
+        /* Animasi logo */
+        @keyframes fadeInScale {
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body onclick="window.location.href='members.html'">
+
+    <div class="logo">
+        <img src="VIERLY.png" alt="Logo VIERLY">
+    </div>
+
+</body>
+</html>
